@@ -95,8 +95,9 @@ def quick_sort(lst):
             if i < mid:
                 less.append(i)
             elif i > mid:
+                Q_compCount += 1
                 more.append(i)
-            elif i == mid:
+            else:
                 equal.append(i)
 
         Q_perCount += 2
